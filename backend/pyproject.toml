@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "accommodation-backend"
+version = "0.1.0"
+description = "Backend for the accommodation project"
+authors = ["Chinomnso Chinedum <chinomnsoc@gmail.com>"]
+readme = "README.md"
+packages = [{include = "accommodation_backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^8.3.3"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
