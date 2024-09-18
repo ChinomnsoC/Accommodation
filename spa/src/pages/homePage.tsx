@@ -1,4 +1,5 @@
-// frontend/pages/index.tsx
+// this page renders the buttons for all the different types of accommodation that will be
+// available for the meeting
 import { useEffect, useState } from "react";
 import axiosInstance from "../utils/axios";
 

@@ -15,4 +15,6 @@ An accommodation booking website for fixed meetings throughout the year. The aim
 - API- FastApi
 - Testing - Pytest, Jest
 
+## Proposed User Journey
 
+![image](./Screenshot%202024-09-18%20at%2022.43.29.png)
