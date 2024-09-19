@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Accommodation App</h1>
+      <h1>Accommodation Application</h1>
       <p>{message}</p>
     </div>
   );
