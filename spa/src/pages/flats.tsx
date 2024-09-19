@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Button } from '@mui/material';
 import roomAvailabilityChecker from '../utils/room-availability-checker';
 
 export default function Flats() {
@@ -21,7 +20,7 @@ export default function Flats() {
         <div key={room.id}>
           <h3>{room.name}</h3>
           <p>{room.description}</p>
-          <Button variant="contained" color="primary">Book Now</Button>
+          <button>Book Now</button>
         </div>
       ))}
     </div>
