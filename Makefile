@@ -25,4 +25,4 @@ backend-start:
 	}
 	
 # Combined commands
-start: frontend-start backend-start
+start: frontend-install frontend-build backend-start
