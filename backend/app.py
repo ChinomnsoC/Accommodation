@@ -14,7 +14,7 @@ def read_root():
 
 @app.get("/private-rooms/{category}")
 async def get_buildings_by_category(user_id: str, category: str):
-    # returns a list of all buildings under the given category
+    # Returns a list of all buildings under the given category
     session = Session()
     try:
         user = session.query(User).filter(User.id == user_id).first()
@@ -28,6 +28,7 @@ async def get_buildings_by_category(user_id: str, category: str):
 
 @app.get("/private-rooms/{category}/{building_name}")
 async def get_available_rooms(user_id: str, building_name: str, category: str):
+    # Returns the number of available rooms in a building
     session = Session()
     try:
         # Check if the user exists

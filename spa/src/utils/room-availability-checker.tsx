@@ -1,11 +1,20 @@
-// function that takes two arguments: user id and room selected
-// then it checks the database for how many rooms in that category are available
-// then it returns a list of available rooms.
 import axios from 'axios';
 
-export default async function roomAvailabilityChecker(userId: string, category: string) {
+export async function getBuildingsByCategory(userId: string, category: string) {
+  // returns a list of all buildings under the given category
   try {
-    const response = await axios.get(`/api/rooms?userId=${userId}&category=${category}`);
+    const response = await axios.get(`/private-rooms/${category}?userId=${userId}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching available buildings:', error);
+    return [];
+  }
+}
+
+export async function getAvailableRooms(userId: string, buildingName: string, category: string) {
+  // Returns the number of available rooms in a building
+  try {
+    const response = await axios.get(`/private-rooms/${category}/${buildingName}?userId=${userId}`);
     return response.data;
   } catch (error) {
     console.error('Error fetching available rooms:', error);
