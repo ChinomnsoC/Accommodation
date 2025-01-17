@@ -43,4 +43,5 @@ model Booking {
   date       DateTime
   user       User     @relation(fields: [userId, userName], references: [id, name])
   room       Room     @relation(fields: [hallId, facilityName], references: [id, hallName])
+  @@unique([id, userName, facilityName])
 }
