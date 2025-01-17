@@ -1,8 +1,0 @@
-Here's the rough plan for implementation:
-1. Create a form for registration. It will take the user's full name, church, email address, and accommodation preference. On submit, it will send an email to the user's email address, and generate the registration number for the user which will be in the email address.
-2. Home page for all three main accommodation types; private rooms and general accommodation. These options will be buttons.
-3. Private room landing page with buttons that link to ensuite bedrooms, flats and group rooms
-4. Availability checker is our main function, which will take two arguments: the user id and the type of private room they have selected. It will then search the DB for rooms that are still available, and return a list of available rooms for the selected category.
-5. Ensuite room component that contains all the available ensuite rooms. A user will get here from step 3. When they click on the button for ensuite rooms, a call will be made to the backend via the availability checker to return all available ensuite rooms.
-6. Flats component that contains all the available flats. A user will get here from step 3. When they click on the button for flats, a call will be made to the backend via the availability checker to return all available flats.
-7. Group room component that contains all the available group rooms. A user will get here from step 3. When they click on the button for group rooms, a call will be made to the backend via the availability checker to return all available group rooms.
