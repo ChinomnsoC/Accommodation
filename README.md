@@ -18,6 +18,7 @@ An accommodation booking website for fixed meetings throughout the year. The aim
 January 16th - January 31st. The website needs to be a random website that is customisable with an admin portal. From the admin portal we should be able to update the facilities available, and get a complete summary of bookings made. 
 
 ### Front End Requirements
+
 - Landing page which shows the main button to click for private accommodations.
 - Ensuite rooms page
 - Group rooms page
@@ -30,6 +31,7 @@ January 16th - January 31st. The website needs to be a random website that is cu
 - Start again because timer has elapsed screen
 
 ###  Backend requirements
+
 - Router
 - Populating the backend with dummy rooms and facilities
 - Availability check for rooms under a specific category
