@@ -1,15 +1,24 @@
+"use client";
+
 import styles from './page.module.css';
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
+
+  const handleSearchClick = () => {
+    router.push('/private-accommodation');
+  };
+
   return (
     <div className={styles['page-container']}>
       {/* Header/Navigation */}
       <header className={styles.header}>
-        <h1 className={styles['header-title']}>Meetings Accommodation</h1>
+        <h1 className={styles['header-title']}>ShortNest</h1>
         <nav className={styles['header-nav']}>
           <button className={styles['nav-link']}>About</button>
-          <button className={styles['nav-link']}>Search</button>
+          <button className={styles['nav-link']} onClick={handleSearchClick}>Search</button>
           <button className={styles['nav-link']}>Contact</button>
         </nav>
       </header>
@@ -29,7 +38,7 @@ export default function Home() {
         </div>
 
         {/* Search Button */}
-        <button className={styles.searchSection}>
+        <button className={styles.searchSection} onClick={handleSearchClick}>
           <div className={styles.searchImageContainer}>
             <Image
               src="/private-accom.jpg"
