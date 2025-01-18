@@ -6,7 +6,7 @@ import styles from '../page.module.css';
 const PrivateAccommodation = () => {
   const router = useRouter();
 
-  const handleNavigation = (path) => {
+  const handleNavigation = (path: string) => {
     router.push(path);
   };
 
